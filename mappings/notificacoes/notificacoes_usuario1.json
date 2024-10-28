@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/notificacoes/mes",
+    "headers": {
+      "Authorization": {
+        "matches": "tokenacesso_usuario1"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody":
+    [{
+      "id_notificacao": 4001,
+      "data": "2024-10-25T11:15:00Z",
+      "lida": false,
+      "agendamento": {
+        "id_agendamento": 1001,
+        "titulo": "Consulta A",
+        "descricao": "Doutor Carlos Miguel",
+        "data": "2024-10-25T11:15:00Z",
+        "local": "Sala 3 - Predio A"
+      }
+    }]
+  }
+}

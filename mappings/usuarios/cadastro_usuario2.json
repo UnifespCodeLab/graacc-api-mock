@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/usuarios/cadastrar",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "nome": "João Zinho",
+          "email": "joaozinho@gmail.com",
+          "senha": "senhaencriptada2",
+          "cadastro_confirmado": false
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "id_usuario": 1
+    }
+  }
+}

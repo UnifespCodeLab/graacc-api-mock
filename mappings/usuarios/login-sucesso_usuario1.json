@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/usuarios/login",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "email": "joaozinho@gmail.com",
+          "senha": "senhaencriptada"
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "id": 1,
+      "nome": "João Zinho",
+      "email": "joaozinho@gmail.com",
+      "cadastro_confirmado": false,
+      "token": "tokenacesso_usuario1"
+    }
+  }
+}

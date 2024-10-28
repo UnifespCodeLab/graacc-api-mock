@@ -1,0 +1,40 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/agendamentos",
+    "headers": {
+      "Authorization": {
+        "matches": "tokenacesso_usuario3"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody":
+      [{
+        "id_agendamento": 1003,
+        "titulo": "Consulta C",
+        "descricao": "Doutor Carlos Miguel",
+        "data": "2024-10-29T13:15:00Z",
+        "local": "Sala 3 - Predio A"
+      },
+        {
+          "id_agendamento": 1004,
+          "titulo": "Consulta D",
+          "descricao": "Doutora Rayanne Silva",
+          "data": "2024-10-29T14:30:00Z",
+          "local": "Sala 4 - Predio A"
+        },
+        {
+          "id_agendamento": 2004,
+          "titulo": "Exame C",
+          "descricao": "Exame C para verificação de C+",
+          "data": "2024-11-14T16:00:00Z",
+          "local": "Sala 2 - Predio B"
+        }
+      ]
+  }
+}

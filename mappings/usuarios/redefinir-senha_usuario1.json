@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/usuarios/redefinir-senha",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "email": "joaozinho@gmail.com",
+          "senhaAntiga": "senhaencriptada",
+          "senhaNova": "senhaencriptadanova"
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "mensagem": "Senha redefinida com sucesso."
+    }
+  }
+}

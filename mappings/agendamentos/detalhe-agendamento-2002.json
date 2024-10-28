@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/agendamentos/2002"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody":
+    {
+      "id_agendamento": 2002,
+      "titulo": "Exame C",
+      "descricao": "Exame C para verificação de C+",
+      "data": "2024-11-11T15:00:00Z",
+      "local": "Sala 2 - Predio B"
+    }
+  }
+}

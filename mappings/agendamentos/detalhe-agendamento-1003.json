@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/agendamentos/1003"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody":
+      {
+        "id_agendamento": 1003,
+        "titulo": "Consulta C",
+        "descricao": "Doutor Carlos Miguel",
+        "data": "2024-10-29T13:15:00Z",
+        "local": "Sala 3 - Predio A"
+      }
+  }
+}

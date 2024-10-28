@@ -1,0 +1,40 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/agendamentos",
+    "headers": {
+      "Authorization": {
+        "matches": "tokenacesso_usuario1"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody":
+      [{
+        "id_agendamento": 1001,
+        "titulo": "Consulta A",
+        "descricao": "Doutor Carlos Miguel",
+        "data": "2024-10-25T11:15:00Z",
+        "local": "Sala 3 - Predio A"
+      },
+        {
+          "id_agendamento": 2001,
+          "titulo": "Exame B",
+          "descricao": "Ficar em Jejum por 8h.",
+          "data": "2024-11-11T13:30:00Z",
+          "local": "Sala 1 - Predio B"
+        },
+        {
+          "id_agendamento": 2003,
+          "titulo": "Exame C",
+          "descricao": "Exame C para verificação de C+",
+          "data": "2024-11-11T16:00:00Z",
+          "local": "Sala 2 - Predio B"
+        }
+      ]
+  }
+}

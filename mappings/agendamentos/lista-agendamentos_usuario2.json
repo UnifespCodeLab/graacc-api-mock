@@ -1,0 +1,33 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/agendamentos",
+    "headers": {
+      "Authorization": {
+        "matches": "tokenacesso_usuario2"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody":
+      [{
+        "id_agendamento": 1002,
+        "titulo": "Consulta B",
+        "descricao": "Doutor Carlos Miguel",
+        "data": "2024-10-25T13:15:00Z",
+        "local": "Sala 3 - Predio A"
+      },
+        {
+          "id_agendamento": 2002,
+          "titulo": "Exame C",
+          "descricao": "Exame C para verificação de C+",
+          "data": "2024-11-11T15:00:00Z",
+          "local": "Sala 2 - Predio B"
+        }
+      ]
+  }
+}
