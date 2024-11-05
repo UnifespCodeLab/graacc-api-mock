@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/usuarios/login",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "email": "joanasilva@gmail.com",
+          "senha": "senhaencriptada3"
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type"
+    },
+    "jsonBody": {
+      "id": 3,
+      "nome": "Joana Silva",
+      "email": "joanasilva@gmail.com",
+      "senha": "senhaencriptada3",
+      "cadastro_confirmado": false
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/usuarios/login",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "email": "joaozinho@gmail.com",
+          "senha": "senhaencriptada2"
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type"
+    },
+    "jsonBody": {
+      "id": 2,
+      "nome": "João Zinho",
+      "email": "joaozinho@gmail.com",
+      "senha": "senhaencriptada2",
+      "cadastro_confirmado": false
+    }
+  }
+}
