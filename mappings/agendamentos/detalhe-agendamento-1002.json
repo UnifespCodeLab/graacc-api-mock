@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "GET",
-    "urlPathPattern": "/agendamentos/1001"
+    "urlPathPattern": "/agendamentos/1002"
   },
   "response": {
     "status": 200,
