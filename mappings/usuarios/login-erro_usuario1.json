@@ -1,15 +1,7 @@
 {
   "request": {
     "method": "POST",
-    "url": "/usuarios/login",
-    "bodyPatterns": [
-      {
-        "equalToJson": {
-          "email": "joaozinho@gmail.com",
-          "senha": "senhaerrada"
-        }
-      }
-    ]
+    "url": "/usuarios/login"
   },
   "response": {
     "status": 401,
